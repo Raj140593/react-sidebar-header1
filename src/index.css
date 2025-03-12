@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.start-n100 {
+  transform: translateX(-100%);
+}
+.start-0 {
+  transform: translateX(0);
+}
