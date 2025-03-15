@@ -18,6 +18,7 @@ const Header = ({ toggleSidebar, isOpen }) => {
       <li className="text-white">Email: info@teckleap.com</li>
       <li className="text-white">Office: +1 (469) 277-7001</li>
       <li className="text-white">Mon-Fri, 9:00am – 5:00pm</li>
+      
     </nav>
   );
 };
