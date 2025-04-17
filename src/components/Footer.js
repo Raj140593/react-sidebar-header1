@@ -1,7 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaHome, FaInfo,FaBlog , FaServicestack, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; 
+import { IoIosMail } from "react-icons/io";
+import { MdGroupWork } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+import "./styles.css";
 
-import "./style.css";
-const Footer = () => {
+const Footer = ({ setIsOpen }) => {
   return (
     <footer className="footer-container">
       <div className="footer-section">
@@ -11,43 +17,35 @@ const Footer = () => {
             <li>
               <a href="#">
                 <span className="icon ion-ios-pin"></span>
-                <span className="text">
-                  203 Fake St. Mountain View, San Francisco, California, USA
-                </span>
+                <span className="text"><FaMapMarkerAlt /> 203 Fake St. Mountain View, San Francisco, California, USA</span>
               </a>
             </li>
             <li>
               <a href="#">
                 <span className="icon ion-ios-call"></span>
-                <span className="text">+2 392 3929 210</span>
+                <span className="text"><IoCall />+2 392 3929 210</span>
               </a>
             </li>
             <li>
               <a href="#">
                 <span className="icon ion-ios-send"></span>
-                <span className="text">info@yourdomain.com</span>
+                <span className="text"><IoIosMail />info@yourdomain.com</span>
               </a>
             </li>
           </ul>
         </div>
 
         <div className="social-icons">
-          <a href="https://facebook.com" className="social-icon">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-              alt="Facebook"
-            />
-          </a>
-          <a href="https://twitter.com" className="social-icon">
-            <img src="/img/tiwt.png" alt="Twitter" />
-          </a>
-          <a href="https://instagram.com" className="social-icon">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-              alt="Instagram"
-            />
-          </a>
-        </div>
+  <a href="https://facebook.com" className="social-icon facebook" aria-label="Facebook">
+    <FaFacebookF />
+  </a>
+  <a href="https://twitter.com" className="social-icon twitter" aria-label="Twitter">
+    <FaTwitter />
+  </a>
+  <a href="https://instagram.com" className="social-icon instagram" aria-label="Instagram">
+    <FaInstagram />
+  </a>
+</div>
       </div>
 
       <div className="footer-section news">
@@ -67,23 +65,15 @@ const Footer = () => {
       <div className="footer-section links">
         <h2>Quick Links</h2>
         <ul>
+          <li><Link to="/"><FaHome /> Home</Link></li>
+          <li><Link to="/pizza"><FaInfo /> About</Link></li>
+          <li><Link to="#"><FaServicestack /> Services</Link></li>
+          <li><Link to="#"><MdGroupWork />Works</Link></li>
+          <li><Link to="#"><FaBlog />Blog</Link></li>
           <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Works</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <Link to="#" onClick={(e) => { e.preventDefault(); setIsOpen(true); }}>
+              <FaEnvelope /> Contact
+            </Link>
           </li>
         </ul>
       </div>

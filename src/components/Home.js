@@ -1,6 +1,5 @@
 import React from "react";
-
-import "./style.css";
+import "./styles.css";
 const jobPosts = [
   {
     date: "February 20, 2025",
