@@ -49,6 +49,37 @@
   cursor: pointer;
   transition: transform 0.2s;
 }
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+  .sidebar-image {
+    max-width: 80%;
+    margin: 0 auto 16px;
+  }
+
+  .close-btn {
+    font-size: 1.4rem;
+    float: none;
+    display: block;
+    margin: -155px auto 11px;
+    margin-right: 10px;
+
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+  .sidebar-image {
+    max-width: 54%;
+    margin: -43px auto 16px;
+  }
+
+  .close-btn {
+    font-size: 1.2rem;
+    margin: -155px auto 11px;
+    margin-right: 10px;
+
+  }
+}
 
 .close-btn:hover {
   transform: rotate(90deg);
@@ -61,14 +92,14 @@
   margin: 12px 0;
   display: flex;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 15px;
   transition: all 0.2s ease;
   padding: 6px 12px;
   border-radius: 8px;
 }
 
 .nav-link:hover {
-  color: #00c6ff;
+  color: #1a0ce0;
   background: rgba(255, 255, 255, 0.1);
   transform: translateX(5px);
 }
