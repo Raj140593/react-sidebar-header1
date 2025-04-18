@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useCart } from "../CartContext"; 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../style.css";
+import "../styles.css";
 
 const PizzaDetail = () => {
   const { id } = useParams();

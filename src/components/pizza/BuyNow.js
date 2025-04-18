@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useCart } from '../CartContext';
-import "../style.css";
+import "../styles.css";
 
 const BuyNow = () => {
   const navigate = useNavigate();

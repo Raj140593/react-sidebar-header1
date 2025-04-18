@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";  // ✅ Import Link
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../style.css";
+import "../styles.css";
 
 const Pizza = () => {
   const [recipes, setRecipes] = useState([]);

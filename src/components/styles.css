@@ -520,3 +520,766 @@ transition: padding-left 0.3s;
     margin: 10px 0;
   }
 }
+
+
+
+/* ---- pizza Layout ---- */
+.pizza-container {
+  height: fit-content ; 
+  position: relative !important;
+
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ---- Recipe Cards ---- */
+.card {
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- Recipe Image ---- */
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* ---- Card Body ---- */
+
+.card-body {
+  padding: 15px;
+  background: #fff;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ---- Ingredients Section ---- */
+.card-body p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ---- Responsive Grid ---- */
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-md-4 {
+    width: 90%;
+  }
+
+  
+}/* 🔹 Main Container */
+.pizza-detail-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 20px;
+}
+
+/* 🔹 Left Side: Image */
+.pizza-image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.pizza-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+/* 🔹 Right Side: Details */
+.pizza-detail-content {
+  flex: 2;
+}
+
+/* 🔹 Title */
+.pizza-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Price */
+.pizza-price {
+  font-size: 22px;
+  color: #388e3c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Ratings */
+.pizza-rating {
+  font-size: 16px;
+  color: #ff9f00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Information */
+.pizza-info {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Ingredients & Description */
+.pizza-ingredients, .pizza-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.add-to-cart-button {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* 🔹 Buttons */
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buy-now-button, .back-button {
+  flex: 1;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* 🔹 Buy Now Button */
+.buy-now-button {
+  background-color: #ff9f00;
+  color: white;
+}
+
+/* 🔹 Back Button */
+.back-button {
+  background-color: #2874f0;
+  color: white;
+}
+
+/* 🔹 Hover Effects */
+.buy-now-button:hover {
+  background-color: #e68900;
+}
+
+.back-button:hover {
+  background-color: #1a5dc4;
+}
+
+/* 🔹 Responsive (Mobile) */
+@media (max-width: 768px) {
+  .pizza-detail-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+}
+/* 🌟 Checkout Page Full Width */
+.buy-now-container {
+  max-width: 80%; /* Increased width */
+  margin: 40px auto;
+  padding: 30px;
+  background: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* ✅ Center Content */
+.buy-now-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background: #2a2a3a;
+  border-radius: 10px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Image Size Increase */
+.buy-now-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #ffcc00;
+}
+
+/* 📋 Details Section */
+.buy-now-details {
+  text-align: left;
+  flex: 1;
+}
+
+/* 🔢 Quantity Input */
+.buy-now-details input {
+  width: 80px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+/* 📝 Full-Width Form */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  width: 100%;
+  background: #2a2a3a;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* 🔘 Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.back-button {
+  background: #444;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background: #666;
+}
+
+.confirm-button {
+  background: #ffcc00;
+  padding: 14px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirm-button:hover {
+  background: #e6b800;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .buy-now-container {
+    max-width: 95%;
+  }
+  
+  .buy-now-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buy-now-details {
+    text-align: center;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* Cart Container */
+.cart-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.cart-container h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.cart-item:hover {
+  transform: scale(1.03);
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+/* Item Image */
+.cart-item-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Item Details */
+.cart-item-details {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.cart-item-details strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff5f5f;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Buttons */
+.remove-button,
+.buy-now-button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.remove-button {
+  background: #ff3b3b;
+  color: white;
+  font-size: 14px;
+}
+
+.remove-button:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+.buy-now-button {
+  background: #28a745;
+  color: white;
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+.buy-now-button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* Cart Summary */
+.cart-summary {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.cart-summary p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff7e5f;
+}
+
+/* Checkout Button */
+.checkout-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff7e5f, #ff9e7d);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.checkout-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(255, 94, 94, 0.4);
+}
+
+/* Empty Cart Message */
+.empty-cart {
+  font-size: 20px;
+  font-weight: bold;
+  color: #999;
+  padding: 20px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* BuyNow Page Styles */
+.buy-now-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.buy-now-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+}
+
+.buy-now-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.buy-now-image {
+  flex: 1 1 150px;
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+.buy-now-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.buy-now-details {
+  flex: 3 1 500px;
+}
+
+.buy-now-details h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.buy-now-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.buy-now-summary {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.checkout-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.checkout-button:hover {
+  background-color: #218838;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .buy-now-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .buy-now-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .buy-now-summary {
+    text-align: center;
+  }
+}
+
+
+/* Main container layout */
+.order-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f5f7fa;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left (Order Summary) */
+.order-left {
+  flex: 1.2;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.order-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.order-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.order-item img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-details h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.order-details p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.order-total {
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Right (Delivery Form) */
+.order-right {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.order-form h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.checkout-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #c0392b;
+}
+
+/* Order confirmation */
+.order-confirmation {
+  text-align: center;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.track-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.track-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .order-left,
+  .order-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

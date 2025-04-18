@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useCart } from "./CartContext";
-import "./style.css";
+import "./styles.css";
 
 const OrderBooking = () => {
   const location = useLocation();
